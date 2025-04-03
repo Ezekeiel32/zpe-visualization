@@ -234,7 +234,7 @@ const ZPEVisualization = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={industryData} layout="vertical">
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Data Reduction (%)', position: 'insideBottom', offset: -5 }} />
+                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Data Reduction (%)', position: 'insideBottom', offset: -15 }} />
                     <YAxis dataKey="industry" type="category" width={120} tickMargin={10} />
                     <Tooltip formatter={(value) => value + '%'} />
                     <Bar dataKey="dataReduction" name="Data Reduction" fill="#6610f2" />
@@ -247,10 +247,10 @@ const ZPEVisualization = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={industryData} layout="vertical">
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Improvement (%)', position: 'insideBottom', offset: -5 }} />
+                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Improvement (%)', position: 'insideBottom', offset: -15 }} />
                     <YAxis dataKey="industry" type="category" width={120} tickMargin={10} />
                     <Tooltip formatter={(value) => value + '%'} />
-                    <Legend />
+                    <Legend wrapperStyle={{ paddingTop: '20px' }} />
                     <Bar dataKey="accuracyGain" name="Accuracy Gain" fill="#0d6efd" />
                     <Bar dataKey="robustnessGain" name="Robustness Gain" fill="#198754" />
                   </BarChart>
