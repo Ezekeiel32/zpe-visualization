@@ -212,7 +212,7 @@ const ZPEVisualization = () => {
                 </p>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg">
-                <h4 className "text-md font-medium text-gray-800 mb-2">Calibrated Confidence</h4>
+                <h4 className="text-md font-medium text-gray-800 mb-2">Calibrated Confidence</h4>
                 <p className="text-sm text-gray-600">
                   ZPE models maintain well-calibrated confidence scores even as uncertainty increases.
                 </p>
@@ -228,13 +228,13 @@ const ZPEVisualization = () => {
               ZPE technology delivers transformative benefits across multiple high-value industries.
             </div>
             
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              <div className="h-64">
+            <div className="grid grid-cols-2 gap-6 mb-12">
+              <div className="h-72">
                 <h4 className="text-md font-medium text-gray-700 mb-2">Training Data Reduction</h4>
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={industryData} layout="vertical">
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Data Reduction (%)', position: 'insideBottom', offset: -5 }} />
+                    <XAxis type="number" domain={[0, 50]} label={{ value: 'Data Reduction (%)', position: 'insideBottom', offset: -20 }} />
                     <YAxis dataKey="industry" type="category" width={120} tickMargin={10} />
                     <Tooltip formatter={(value) => value + '%'} />
                     <Bar dataKey="dataReduction" name="Data Reduction" fill="#6610f2" />
@@ -242,7 +242,7 @@ const ZPEVisualization = () => {
                 </ResponsiveContainer>
               </div>
               
-              <div className="h-64">
+              <div className="h-72">
                 <h4 className="text-md font-medium text-gray-700 mb-2">Performance Improvements</h4>
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={industryData} layout="vertical">
